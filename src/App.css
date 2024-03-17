@@ -82,9 +82,9 @@ header {
   position: absolute;
   top: 0;
   width: 350px;
-  height: 200vh;
+  height: 1600px;
   z-index: -2;
-  opacity: 0.08;
+  /* opacity: 0.1; */
   /* background-color: blue; */
   overflow: hidden;
 
@@ -99,17 +99,30 @@ header {
   height: 2400px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  /* justify-content: space-around; */
+}
+
+.animation-column img {
+  opacity: 0.3;
+  /* width: 30px; */
+}
+
+.opacity-up {
+  opacity: 0.5;
 }
 
 .outer {
   transform: translateY(-75%);
-  height: 3200px;
+  height: 7200px;
+  justify-content: space-evenly;
 }
 
 .inner {
-  height: 4600px;
-  justify-content: space-between;
+  height: 7200px;
+  justify-content: space-around;
+}
+
+.logo-image {
 }
 
 .red-box {
