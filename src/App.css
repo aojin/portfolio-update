@@ -1,6 +1,6 @@
 h1 {
   font-size: 72px;
-  margin-bottom: 18px;
+  margin-bottom: 36px;
 }
 
 .layout-grid {
@@ -297,7 +297,7 @@ header {
 @media all and (max-width: 768px) {
   h1 {
     font-size: 64px;
-    margin-bottom: 8px;
+    margin-bottom: 24px;
   }
   #title-period {
     height: 8px;
@@ -321,6 +321,7 @@ header {
 @media all and (max-width: 480px) {
   h1 {
     font-size: 48px;
+    margin-bottom: 18px;
   }
   #title-period {
     height: 8px;
