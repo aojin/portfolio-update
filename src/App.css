@@ -50,7 +50,7 @@ header {
   padding: 24px 0;
   font-size: 24px;
   background-color: #fcfafc;
-
+  width: fit-content;
   nav {
     ul {
       display: flex;
@@ -88,7 +88,7 @@ header {
   /* transform: translate(-50%, 0); */
   transform: translateY(-120px);
   width: 350px;
-  height: 75vh;
+  height: 60vh;
   z-index: -2;
   /* opacity: 0.1; */
   /* background-color: blue; */
@@ -179,6 +179,8 @@ header {
   }
 
   header {
+    margin: 40px auto;
+
     font-size: 24px;
     button {
       font-size: 24px;
