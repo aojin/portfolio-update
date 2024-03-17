@@ -67,7 +67,6 @@ function ParallaxScroll() {
 
   const LeftColumn = (
     <>
-      <div></div>
       <div className="logo-image">
         <img src={JSLogo} alt="" style={translateDown(scrollProgress)} />
       </div>
@@ -107,15 +106,17 @@ function ParallaxScroll() {
         <img src={BootstrapLogo} alt="" style={translateUp(scrollProgress)} />
       </div>
       <div className="logo-image">
-        <img src={PythonLogo} alt="" style={translateUp(scrollProgress)} />
+        <img src={NextLogo} alt="" style={translateUp(scrollProgress)} />
       </div>
       <div></div>
+      <div className="logo-image">
+        <img src={PythonLogo} alt="" style={translateUp(scrollProgress)} />
+      </div>
     </>
   );
 
   const RightColumn = (
     <>
-      <div></div>
       <div className="logo-image">
         <img
           src={TypescriptLogo}
@@ -134,10 +135,6 @@ function ParallaxScroll() {
       <div></div>
       <div className="logo-image">
         <img src={RailsLogo} alt="" style={translateDown(scrollProgress)} />
-      </div>
-      <div></div>
-      <div className="logo-image">
-        <img src={NextLogo} alt="" style={translateDown(scrollProgress)} />
       </div>
     </>
   );

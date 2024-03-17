@@ -81,8 +81,11 @@ header {
 .animation-scroll {
   position: absolute;
   top: 0;
+  right: 0;
+  /* transform: translate(-50%, 0); */
+  transform: translateY(-120px);
   width: 350px;
-  height: 1600px;
+  height: 75vh;
   z-index: -2;
   /* opacity: 0.1; */
   /* background-color: blue; */
@@ -247,6 +250,7 @@ header {
   padding-right: 50px;
   padding-top: 50px;
   padding-bottom: 75px;
+  position: relative;
 }
 
 .profile-image-with-squares {

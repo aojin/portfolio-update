@@ -43,8 +43,8 @@ function App() {
           </h1>
         </section>
         <section className="hero-image">
-          <ParallaxScroll />{" "}
           <div className="profile-image-container">
+            <ParallaxScroll />{" "}
             <div className="profile-image-with-squares">
               <img id="profile-image" src={ProfilePic} alt="" />
               <div id="red-box"></div>
