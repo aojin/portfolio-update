@@ -3,7 +3,17 @@
 
 @font-face {
   font-family: Metropolis;
+  src: url(./assets/font/Metropolis-Regular.otf);
+}
+
+@font-face {
+  font-family: Metropolis Medium;
   src: url(./assets/font/Metropolis-Medium.otf);
+}
+
+@font-face {
+  font-family: Metropolis Semi-Bold;
+  src: url(./assets/font/metropolis.semi-bold.otf);
 }
 
 :root {
