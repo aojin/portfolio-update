@@ -168,7 +168,7 @@ header {
   margin-top: 150px;
 }
 
-@media all and (max-width: 962px) {
+@media all and (max-width: 936px) {
   .hero {
     justify-content: center;
   }
