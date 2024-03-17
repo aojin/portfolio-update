@@ -1,0 +1,22 @@
+:root {
+  font-family: "Lexend Deca", sans-serif;
+  color: #474747;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: white;
+  background-image: radial-gradient(#dcdcdc 2px, transparent 0);
+  background-size: 40px 40px;
+  background-position: -19px -19px;
+  height: 100vh;
+}
+
+button {
+  font-family: "Lexend Deca", sans-serif;
+}
