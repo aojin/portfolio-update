@@ -235,8 +235,8 @@ header {
 }
 
 #title-period {
-  height: 16px;
-  width: 16px;
+  height: 12px;
+  width: 12px;
   background-color: #ffed02;
 
   position: absolute;
@@ -297,6 +297,7 @@ header {
 @media all and (max-width: 768px) {
   h1 {
     font-size: 64px;
+    margin-bottom: 8px;
   }
   #title-period {
     height: 8px;
