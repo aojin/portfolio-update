@@ -35,6 +35,7 @@ h1 {
 
 .hero-text {
   margin-right: auto;
+  background-color: #fcfafc99;
 }
 
 .anything {
@@ -46,7 +47,9 @@ h1 {
 header {
   margin-top: 40px;
   margin-bottom: 40px;
+  padding: 24px 0;
   font-size: 24px;
+  background-color: #fcfafc;
 
   nav {
     ul {
