@@ -301,6 +301,7 @@ header {
   h1 {
     font-size: 64px;
     margin-bottom: 24px;
+    letter-spacing: -0.2rem;
   }
   #title-period {
     height: 8px;
