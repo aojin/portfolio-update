@@ -32,7 +32,7 @@ function App() {
       <section className="hero">
         <section className="hero-text">
           <h1 id="title-alex">
-            I'm <span>Alex</span>
+            I'm <span>Alex,</span>
           </h1>
           <h1 id="title-fullstack">
             a <span>Full Stack</span>
