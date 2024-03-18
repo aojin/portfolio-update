@@ -92,6 +92,7 @@ header {
   transform: translateY(-120px);
   width: 350px;
   height: 80vh;
+  min-height: 600px;
   z-index: -2;
   /* opacity: 0.1; */
   /* background-color: blue; */
