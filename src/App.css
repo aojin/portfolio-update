@@ -1,8 +1,9 @@
 h1 {
-  font-family: "Fragment Mono", sans-serif;
-  letter-spacing: -0.2rem;
+  font-family: "Metropolis Medium", sans-serif;
+  letter-spacing: 0rem;
   font-size: 72px;
   margin-bottom: 30px;
+  font-weight: bold;
 }
 
 .layout-grid {
@@ -170,7 +171,7 @@ header {
   margin-top: 150px;
 }
 
-@media all and (max-width: 936px) {
+@media all and (max-width: 1001px) {
   .hero {
     justify-content: center;
   }
