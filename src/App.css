@@ -124,16 +124,16 @@ h3 {
   max-width: 600px;
 
   img {
-    height: 24px;
+    height: 32px;
     /* border-radius: 6px; */
 
-    margin-right: 12px;
+    margin-right: 16px;
   }
 
   .icon {
-    font-size: 24px;
-    height: 24px;
-    width: 24px;
+    font-size: 32px;
+    height: 32px;
+    width: 32px;
     margin-right: 12px;
   }
 
@@ -198,7 +198,7 @@ h3 {
 }
 
 .logo-image {
-  opacity: 0.2;
+  opacity: 0.25;
 }
 
 .outer {
@@ -292,6 +292,11 @@ h3 {
       */
 
 @media all and (min-width: 1001px) {
+  h1 {
+    font-size: 64px;
+    margin-bottom: 24px;
+    letter-spacing: -0.2rem;
+  }
   .hero-text {
     background: none;
   }
@@ -303,13 +308,17 @@ h3 {
   }
 
   .logo-image {
-    opacity: 0.1;
+    opacity: 0.4;
   }
 
   .hero {
     justify-content: center;
     gap: 60px;
     margin-bottom: 480px;
+  }
+
+  .hero-text {
+    background-color: #fcfafc;
   }
 
   .about,
@@ -319,6 +328,7 @@ h3 {
   }
 
   .facts {
+    background-color: #fcfafc;
     grid-column: 1/-1;
     margin: 0 auto;
     width: fit-content;
@@ -443,4 +453,13 @@ h3 {
       padding: 8px 12px;
     }
   }
+}
+
+/* Portrait */
+@media screen and (orientation: portrait) {
+  /* Portrait styles here */
+}
+/* Landscape */
+@media screen and (orientation: landscape) {
+  /* Landscape styles here */
 }

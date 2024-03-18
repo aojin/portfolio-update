@@ -116,6 +116,14 @@ function App() {
               Tailwind, HTML, SCSS, ++
             </p>
           </h3>
+          <br />
+          <h3>
+            <span className="icon">💻</span>
+            <p>
+              <span className="label">Backend: </span> Rails, Node, GraphQL,
+              SQL, NoSQL, ++
+            </p>
+          </h3>
         </section>
       </section>
       <section className="projects">Projects</section>
