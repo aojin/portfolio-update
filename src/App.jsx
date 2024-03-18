@@ -1,9 +1,14 @@
 import ProfilePic from "./assets/line-portrait-on-aqua.png";
 import DownloadIcon from "./assets/utility-icons/download.svg";
+import ChicagoFlagIcon from "./assets/chicago-circle.jpeg";
+import COFlagIcon from "./assets/co-circle.png";
+import GithubLogo from "./assets/github-mark.png";
+import LinkedInLogo from "./assets/linked-in.png";
+import GoodreadsLogo from "./assets/goodreads.png";
+import InstagramLogo from "./assets/instagram.png";
 import "./App.css";
 
 import ParallaxScroll from "./components/ParallaxScroll";
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 function App() {
   return (
@@ -31,20 +36,35 @@ function App() {
       </header>
       <section className="hero">
         <section className="hero-text">
-          <h1 id="title-alex">
-            I'm <span>Alex,</span>
-          </h1>
-          <h1 id="title-fullstack">
-            a <span>Full Stack</span>
-          </h1>
-          <h1 id="title-developer">
-            Web <span>Developer</span>
-            <div id="title-period"></div>
-          </h1>
+          <section className="hero-title">
+            <h1 id="title-alex">
+              I'm <span>Alex,</span>
+            </h1>
+            <h1 id="title-fullstack">
+              a <span>Full Stack</span>
+            </h1>
+            <h1 id="title-developer">
+              Web <span>Developer</span>
+              <div id="title-period"></div>
+            </h1>
+          </section>
+          <nav className="hero-links">
+            <a href="#">
+              <img src={GithubLogo} alt="" />
+            </a>
+            <a href="#">
+              <img src={LinkedInLogo} alt="" />
+            </a>
+            <a href="#">
+              <img src={GoodreadsLogo} alt="" />
+            </a>
+            <a href="#">
+              <img src={InstagramLogo} alt="" />
+            </a>
+          </nav>
         </section>
         <section className="hero-image">
           <div className="profile-image-container">
-            <ParallaxScroll />{" "}
             <div className="profile-image-with-squares">
               <img id="profile-image" src={ProfilePic} alt="" />
               <div id="red-box"></div>
@@ -54,27 +74,55 @@ function App() {
         </section>
       </section>
       <section className="about">
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore
-          dolores, nesciunt, minus ex dicta omnis corrupti reprehenderit neque
-          dignissimos vel culpa corporis voluptas doloremque esse. Natus facere
-          fuga magnam minima. Lorem ipsum dolor, sit amet consectetur
-          adipisicing elit. In, provident magni minima earum rem quo optio nemo
-          laboriosam excepturi eligendi repellat eos, veritatis praesentium
-          ratione a quaerat numquam unde voluptatum.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam eum
-          delectus architecto earum sint libero beatae saepe ipsum aut animi
-          quod explicabo omnis distinctio, sunt necessitatibus incidunt esse
-          autem fugiat? Lorem, ipsum dolor sit amet consectetur adipisicing
-          elit. Quasi magnam reiciendis facere fuga, dolore vitae, minus error
-          iusto ut dicta assumenda, omnis recusandae debitis dolorem! Amet id
-          sequi tempora accusamus.
-        </p>
+        <section className="facts">
+          <h3>
+            <img src={ChicagoFlagIcon} alt="chicago flag icon" />
+            <span className="label">Born: </span> <p>Chicago, IL</p>
+          </h3>
+          <br />
+          <br />
+          <h3>
+            <img src={COFlagIcon} alt="" />
+            <span className="label">Currently In: </span> <p>Boulder, CO</p>
+          </h3>
+          <br />
+          <br />
+          <h3>
+            <span className="icon">🎓</span> <p>MsCS from DePaul University</p>
+          </h3>
+          <br />
+          <br />
+          <h3>
+            <span className="icon">🛠️</span>
+            <p>
+              <mark style={{ background: `#FFED02` }}>Five Years</mark>
+              of Experience Building For The Web
+            </p>
+          </h3>
+          <br />
+          <br />
+          <h3>
+            <span className="icon">❤️</span>
+            <p>Running, Skiing, Climbing, Sketch, Film Photography</p>
+          </h3>
+          <br />
+          <br />
+          <br />
+          <br />
+          <h3>
+            <span className="icon">💻</span>
+            <p>
+              <span className="label">Frontend: </span> React, Typescript,
+              Tailwind, HTML, SCSS, ++
+            </p>
+          </h3>
+        </section>
       </section>
-      <section className="projects"></section>
-      <section className="contact"></section>
+      <section className="projects">Projects</section>
+      <section className="contact">Contact</section>
+      <div className="scroll-background">
+        <ParallaxScroll />
+      </div>
     </main>
   );
 }
