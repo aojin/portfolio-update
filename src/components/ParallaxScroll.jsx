@@ -4,17 +4,17 @@ import CSS3Logo from "../assets/logos/CSS3_logo.svg.png";
 import JSLogo from "../assets/logos/js.png";
 import ReactLogo from "../assets/logos/react.png";
 import NPMLogo from "../assets/logos/npm.png";
-import TailwindLogo from "../assets/logos/tailwind-css-icon.png";
+import TailwindLogo from "../assets/logos/tailwind.png";
 import D3Logo from "../assets/logos/d3-js-icon.png";
 import BootstrapLogo from "../assets/logos/bootstrap-logo.png";
 import TypescriptLogo from "../assets/logos/typescript-logo.png";
 import RailsLogo from "../assets/logos/rails-logo.png";
 import NodeLogo from "../assets/logos/nodejs.png";
 import GraphQLLogo from "../assets/logos/graphql.png";
-import PythonLogo from "../assets/logos/python-logo.png";
 import GithubLogo from "../assets/logos/github-logo.png";
 import NextLogo from "../assets/logos/nextjs-logo.png";
-
+import SalesforceLogo from "../assets/logos/salesforce.png";
+import SassLogo from "../assets/logos/sass.png";
 import { useScroll } from "@react-spring/web";
 
 function getWindowDimensions() {
@@ -43,7 +43,7 @@ function ParallaxScroll() {
 
   console.log({ windowDimensions });
 
-  const { scrollYProgress } = useScroll({
+  useScroll({
     onChange: ({ value: { scrollYProgress } }) => {
       setScrollProgress(scrollYProgress);
     },
@@ -70,19 +70,18 @@ function ParallaxScroll() {
       <div className="logo-image">
         <img src={JSLogo} alt="" style={translateDown(scrollProgress)} />
       </div>
-      <div></div>
       <div className="logo-image">
         <img src={CSS3Logo} alt="" style={translateDown(scrollProgress)} />
       </div>
-      <div></div>
+      <div className="logo-image">
+        <img src={RailsLogo} alt="" style={translateDown(scrollProgress)} />
+      </div>
       <div className="logo-image opacity-up">
         <img src={ReactLogo} alt="" style={translateDown(scrollProgress)} />
       </div>
-      <div></div>
       <div className="logo-image opacity-up">
         <img src={GraphQLLogo} alt="" style={translateDown(scrollProgress)} />
       </div>
-      <div></div>
       <div className="logo-image opacity-up">
         <img src={GithubLogo} alt="" style={translateDown(scrollProgress)} />
       </div>
@@ -92,25 +91,16 @@ function ParallaxScroll() {
   const MiddleColumn = (
     <>
       <div className="logo-image">
-        <img src={NPMLogo} alt="" style={translateUp(scrollProgress)} />
-      </div>
-      <div></div>
-      <div className="logo-image">
-        <img src={TailwindLogo} alt="" style={translateUp(scrollProgress)} />
-      </div>
-      <div className="logo-image">
         <img src={NodeLogo} alt="" style={translateUp(scrollProgress)} />
       </div>
-      <div></div>
       <div className="logo-image">
         <img src={BootstrapLogo} alt="" style={translateUp(scrollProgress)} />
       </div>
       <div className="logo-image">
         <img src={NextLogo} alt="" style={translateUp(scrollProgress)} />
       </div>
-      <div></div>
       <div className="logo-image">
-        <img src={PythonLogo} alt="" style={translateUp(scrollProgress)} />
+        <img src={TailwindLogo} alt="" style={translateUp(scrollProgress)} />
       </div>
     </>
   );
@@ -124,17 +114,22 @@ function ParallaxScroll() {
           style={translateDown(scrollProgress)}
         />
       </div>
-      <div></div>
       <div className="logo-image">
         <img src={HTML5Logo} alt="" style={translateDown(scrollProgress)} />
       </div>
-      <div></div>
       <div className="logo-image">
         <img src={D3Logo} alt="" style={translateDown(scrollProgress)} />
       </div>
-      <div></div>
+
       <div className="logo-image">
-        <img src={RailsLogo} alt="" style={translateDown(scrollProgress)} />
+        <img
+          src={SalesforceLogo}
+          alt=""
+          style={translateDown(scrollProgress)}
+        />
+      </div>
+      <div className="logo-image">
+        <img src={SassLogo} alt="" style={translateDown(scrollProgress)} />
       </div>
     </>
   );

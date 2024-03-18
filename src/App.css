@@ -91,7 +91,7 @@ header {
   /* transform: translate(-50%, 0); */
   transform: translateY(-120px);
   width: 350px;
-  height: 60vh;
+  height: 80vh;
   z-index: -2;
   /* opacity: 0.1; */
   /* background-color: blue; */
@@ -121,14 +121,14 @@ header {
 }
 
 .outer {
-  transform: translateY(-75%);
+  transform: translateY(-60%);
   height: 7200px;
   justify-content: space-evenly;
 }
 
 .inner {
   height: 7200px;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .logo-image {
