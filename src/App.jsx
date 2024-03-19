@@ -6,6 +6,7 @@ import GithubLogo from "./assets/github-mark.png";
 import LinkedInLogo from "./assets/linked-in.png";
 import GoodreadsLogo from "./assets/goodreads.png";
 import InstagramLogo from "./assets/instagram.png";
+import ResumePDF from "./assets/AlexJin2024Resume.pdf";
 import "./App.css";
 
 import ParallaxScroll from "./components/ParallaxScroll";
@@ -67,10 +68,16 @@ function App() {
                 <a href="#contact">Contact</a>
               </li>
               <li>
-                <button>
-                  <img src={DownloadIcon} alt="download resume" />
-                  Resume
-                </button>
+                <a
+                  href={ResumePDF}
+                  download="Alex Jin 2024 Resume"
+                  target="_blank"
+                >
+                  <button>
+                    <img src={DownloadIcon} alt="download resume" />
+                    Resume
+                  </button>
+                </a>
               </li>
             </ul>
           </nav>
