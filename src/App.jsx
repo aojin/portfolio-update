@@ -160,9 +160,9 @@ function App() {
               </h3>
             </div>
           </section>
+          <div id="about" className="scroll-anchor"></div>
 
           <h2>About</h2>
-          <div id="about" className="scroll-anchor"></div>
 
           <section className="about-blurb">
             <p>
@@ -204,14 +204,15 @@ function App() {
           </section>
         </section>
         <section className="projects">
+          <div id="projects" className="scroll-anchor"></div>
+
           <h2>Projects</h2>
 
-          <div id="projects" className="scroll-anchor"></div>
           <ProjectList projects={projects} />
         </section>
         <section id="contact" className="contact">
           <div id="contact" className="scroll-anchor"></div>
-          contact
+          <h2>Contact</h2>
           <div>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam,
             soluta? Non minus eligendi ab, deserunt illum aliquam quidem
