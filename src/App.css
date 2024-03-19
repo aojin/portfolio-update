@@ -745,8 +745,14 @@ html {
     h2 {
     }
 
-    a {
+    a:link,
+    a:visited {
       width: fit-content;
+      color: #474747;
+
+      button {
+        color: #474747;
+      }
     }
 
     .more-info {
