@@ -37,7 +37,7 @@ const propTypes = {
 
 const defaultProps = {};
 
-function ProjectTile({ technologies, name, url }) {
+function ProjectTile({ technologies, name, url, companyImage }) {
   return (
     <article className="project-tile">
       <div className="project-tile-banner">
@@ -60,20 +60,25 @@ function ProjectTile({ technologies, name, url }) {
           </ul>
         </section>
         <section className="project-tile-info">
-          <label>
-            <h2>{name}</h2>
-          </label>
-          {url ? (
-            <a href={url}>
-              <img src={ClickIcon} alt="" />
-              Visit
-            </a>
-          ) : (
-            <div className="more-info">
-              <img src={LockIcon} alt="" />
-              <span>Contact For Details</span>
-            </div>
-          )}
+          <div className="project-tile-info-mobile-left-align">
+            <label>
+              <h2>{name}</h2>
+            </label>
+            {url ? (
+              <a href={url}>
+                <img src={ClickIcon} alt="" />
+                Visit
+              </a>
+            ) : (
+              <div className="more-info">
+                <img src={LockIcon} alt="" />
+                <span>Contact For Details</span>
+              </div>
+            )}
+          </div>
+          <div className="project-tile-info-mobile-right-align">
+            <img src={companyImage} alt="" />
+          </div>
         </section>
       </div>
     </article>

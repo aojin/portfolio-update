@@ -6,6 +6,12 @@ import GithubLogo from "./assets/github-mark.png";
 import LinkedInLogo from "./assets/linked-in.png";
 import GoodreadsLogo from "./assets/goodreads.png";
 import InstagramLogo from "./assets/instagram.png";
+import BlueGoatLogo from "./assets/logos/bluegoatexpeditions.png";
+import ATBSLogo from "./assets/logos/atbs.png";
+import InspiraLogo from "./assets/logos/mtc.png";
+import NateraLogo from "./assets/logos/natera.webp";
+import FirmValueLogo from "./assets/logos/firmvalue.webp";
+import PersonalProjectLogo from "./assets/logos/personal.png";
 import ResumePDF from "./assets/AlexJin2024Resume.pdf";
 import "./App.css";
 
@@ -17,37 +23,46 @@ const projects = [
     name: "American Truck Business Services",
     url: "https://www.atbs.com/",
     technologies: ["ionic", "rails", "sass"],
+    companyImage: ATBSLogo,
   },
   {
-    name: "Millennium Trust Company",
+    name: "Millennium Trust Company (Inspira Financial)",
     url: "https://inspirafinancial.com/",
     technologies: ["react", "mulesoft", "rails", "sass"],
+    companyImage: InspiraLogo,
   },
   {
     name: "Natera",
     url: "https://www.natera.com",
     technologies: ["react", "salesforce", "sass"],
+    companyImage: NateraLogo,
   },
   {
     name: "Firm Value",
     url: "https://www.crunchbase.com/organization/firm-value",
     technologies: ["react", "rails", "sass"],
-  },
-  {
-    name: "Framelines",
-    technologies: ["rails", "tailwind"],
-  },
-  {
-    name: "Visit Boulder",
-    technologies: ["react", "typescript", "sass"],
+    companyImage: FirmValueLogo,
   },
   {
     name: "Blue Goat Mountaineering",
     technologies: ["react", "typescript", "tailwind"],
+    companyImage: BlueGoatLogo,
   },
+  {
+    name: "Framelines",
+    technologies: ["rails", "tailwind"],
+    companyImage: PersonalProjectLogo,
+  },
+  {
+    name: "Visit Boulder",
+    technologies: ["react", "typescript", "sass"],
+    companyImage: PersonalProjectLogo,
+  },
+
   {
     name: "Designable Web",
     technologies: ["next", "node", "graphql", "tailwind"],
+    companyImage: PersonalProjectLogo,
   },
 ];
 

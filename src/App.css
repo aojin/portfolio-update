@@ -473,6 +473,16 @@ html {
   }
 }
 
+.project-tile-info-mobile-left-align {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.project-tile-info-mobile-right-align {
+  display: none;
+}
+
 /**
       * Basic CSS Media Query Template
       * ------------------------------------------
@@ -596,12 +606,15 @@ html {
   }
 }
 
-@media all and (min-width: 768px) and (max-width: 1001px) {
-  .hero {
-    /* justify-content: center;
-    gap: 60px; */
-    /* margin-bottom: 320px; */
+.project-tile-info-mobile-right-align {
+  img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
   }
+}
+
+@media all and (min-width: 768px) and (max-width: 1001px) {
   .about,
   .projects,
   .contact {
@@ -610,6 +623,17 @@ html {
   }
   .facts {
     width: 800px;
+  }
+
+  .project-tile-info {
+    flex-direction: row-reverse;
+    img {
+      margin-right: 24px;
+    }
+  }
+
+  .project-tile-info-mobile-right-align {
+    display: block;
   }
 }
 
@@ -673,6 +697,17 @@ html {
   .more-info {
     font-size: 14px;
     padding: 4px 6px;
+  }
+
+  .project-tile-info {
+    flex-direction: row-reverse;
+    img {
+      margin-right: 24px;
+    }
+  }
+
+  .project-tile-info-mobile-right-align {
+    display: block;
   }
 }
 
@@ -750,8 +785,22 @@ html {
   }
 
   .project-tile-info {
-    flex-direction: column;
-    align-items: flex-start !important;
+    flex-direction: row;
+    .project-tile-info-mobile-left-align {
+      flex-direction: column;
+
+      gap: 24px;
+    }
+
+    .project-tile-info-mobile-right-align {
+      display: block;
+      padding-right: 18px;
+      img {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+      }
+    }
 
     h2 {
     }

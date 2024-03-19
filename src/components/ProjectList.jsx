@@ -18,6 +18,7 @@ function ProjectList({ projects }) {
             name={project.name}
             technologies={project.technologies}
             url={project.url}
+            companyImage={project.companyImage}
           />
         );
       })}
