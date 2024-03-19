@@ -108,6 +108,7 @@ html {
   grid-template-columns: 1fr 375px;
   grid-template-rows: 120px fit-content fit-content fit-content;
   row-gap: 60px;
+  column-gap: 60px;
 }
 
 .hero {
