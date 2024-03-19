@@ -661,6 +661,19 @@ html {
 }
 
 @media all and (max-width: 480px) {
+  nav {
+    ul {
+      li {
+        a {
+          font-size: 16px;
+        }
+        button {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
   h1 {
     font-size: 48px;
     margin-bottom: 18px;
@@ -679,6 +692,25 @@ html {
     padding: 0 12px;
   }
 
+  .about-blurb {
+    font-size: 14px;
+  }
+
+  .facts {
+    .icon {
+      font-size: 24px;
+      margin-right: 6px;
+    }
+    h3 {
+      font-size: 16px;
+
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+
   #title-period {
     height: 8px;
     width: 8px;
@@ -694,6 +726,26 @@ html {
     button {
       font-size: 1.2rem;
       padding: 8px 12px;
+    }
+  }
+
+  .project-tile {
+    height: 120px;
+  }
+
+  .project-tile-info {
+    flex-direction: column;
+    align-items: flex-start !important;
+
+    h2 {
+    }
+
+    a {
+      width: fit-content;
+    }
+
+    .more-info {
+      width: fit-content;
     }
   }
 }
