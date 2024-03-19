@@ -481,6 +481,8 @@ html {
     }
     img {
       height: 36px;
+      /* box-shadow: 2px 2px 2px #47474722; */
+      border-radius: 50%;
     }
   }
 }
@@ -628,6 +630,23 @@ html {
     height: 48px;
     border-radius: 50%;
   }
+}
+
+/* FORM */
+
+.contact h2 {
+  margin-bottom: 80px;
+
+  span {
+    font-size: 48px;
+    margin-left: 18px;
+  }
+}
+
+.form-area {
+  background-color: #47474720;
+  padding: 60px;
+  margin-bottom: 60px;
 }
 
 @media all and (min-width: 768px) and (max-width: 1001px) {

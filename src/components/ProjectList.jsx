@@ -8,10 +8,13 @@ const propTypes = {
 
 const defaultProps = {};
 
+const colorSequence = ["#EB539F", "#6CE4CF", "#5AC4F6", "#FFED02"];
+
 function ProjectList({ projects }) {
   return (
     <ul className="projects-list">
       {projects.map((project, index) => {
+        const tileColorNum = index % colorSequence.length;
         return (
           <ProjectTile
             key={index}
@@ -19,6 +22,7 @@ function ProjectList({ projects }) {
             technologies={project.technologies}
             url={project.url}
             companyImage={project.companyImage}
+            tileColor={colorSequence[tileColorNum]}
           />
         );
       })}

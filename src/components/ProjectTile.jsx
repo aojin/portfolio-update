@@ -33,13 +33,18 @@ const propTypes = {
   technologies: PropTypes.arrayOf(PropTypes.string),
   name: PropTypes.string,
   url: PropTypes.string,
+  companyImage: PropTypes.node,
+  tileColor: PropTypes.string,
 };
 
 const defaultProps = {};
 
-function ProjectTile({ technologies, name, url, companyImage }) {
+function ProjectTile({ technologies, name, url, companyImage, tileColor }) {
   return (
-    <article className="project-tile">
+    <article
+      className="project-tile"
+      style={{ backgroundColor: `${tileColor}20` }}
+    >
       <div className="project-tile-banner">
         <section className="project-tile-imgs">
           <ul>

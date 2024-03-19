@@ -234,7 +234,9 @@ function App() {
         </section>
         <section id="contact" className="contact">
           <div id="contact" className="scroll-anchor"></div>
-          <h2>Contact</h2>
+          <h2>
+            Contact <span>📬</span>
+          </h2>
           <ContactForm />
         </section>
         <div className="scroll-background">
