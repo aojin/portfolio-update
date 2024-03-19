@@ -152,6 +152,7 @@ html {
   width: 100%;
   max-width: 600px;
   margin-bottom: 60px;
+  padding: 24px 0;
 
   img {
     height: 32px;
