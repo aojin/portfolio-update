@@ -622,7 +622,7 @@ html {
   .about,
   .projects,
   .contact {
-    margin-top: 0;
+    margin-top: 120px;
     padding: 12px;
   }
 
