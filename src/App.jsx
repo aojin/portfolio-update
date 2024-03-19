@@ -152,7 +152,7 @@ function App() {
             </h3>
             <h3>
               <span className="icon">🎓</span>{" "}
-              <p>MsCS from DePaul University</p>
+              <p>Master's In CS from DePaul University</p>
             </h3>
             <h3>
               <span className="icon">🛠️</span>
