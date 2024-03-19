@@ -510,7 +510,7 @@ html {
     gap: 0;
   }
   .scroll-background {
-    grid-row: 2/4;
+    grid-row: 2/6;
   }
   .animation-scroll {
     width: 500px;

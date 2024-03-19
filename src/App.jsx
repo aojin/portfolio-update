@@ -162,8 +162,8 @@ function App() {
               <h3>
                 <span className="icon">💻</span>
                 <p>
-                  <span className="label">Frontend: </span> React, Typescript,
-                  Tailwind, HTML, SCSS, ++
+                  <span className="label">Frontend: </span> React, Next,
+                  Typescript, Tailwind, HTML, SCSS, ++
                 </p>
               </h3>
               <h3>
