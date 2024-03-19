@@ -202,6 +202,7 @@ function App() {
         </section>
         <section className="projects">
           <h2>Projects</h2>
+
           <div id="projects" className="scroll-anchor"></div>
           <ProjectList projects={projects} />
         </section>

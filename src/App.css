@@ -209,6 +209,10 @@ html {
 .projects {
   grid-row: 4/5;
   grid-column: 1/-1;
+
+  h2 {
+    margin-bottom: 72px;
+  }
 }
 
 .contact {
@@ -608,7 +612,7 @@ html {
   .projects,
   .contact {
     margin-top: 0;
-    padding: 30px;
+    padding: 12px;
   }
 
   .facts {
