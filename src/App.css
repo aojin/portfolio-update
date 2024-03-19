@@ -63,6 +63,7 @@ h1 {
   margin-bottom: 30px;
   font-weight: bold;
   white-space: nowrap;
+  text-shadow: 1px 1px 3px #47474722;
 }
 
 h2 {
@@ -146,6 +147,8 @@ html {
 
   img {
     width: 42px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px #47474722;
   }
 }
 
@@ -307,12 +310,14 @@ html {
   position: absolute;
   transform: translate(50%, -150%);
   right: 0;
+  box-shadow: 2px 3px 3px #47474722;
 }
 
 #profile-image {
   height: 225px;
   width: 225px;
   display: block;
+  box-shadow: 4px 4px 4px #47474722;
 }
 
 .profile-image-container {
@@ -335,6 +340,7 @@ html {
   position: absolute;
   transform: translate(-50%, -50%);
   z-index: -1;
+  box-shadow: 4px 4px 4px #47474722;
 }
 
 #red-box {
@@ -345,6 +351,7 @@ html {
   top: 0;
   right: 0;
   transform: translate(50%, -50%);
+  box-shadow: 4px 4px 4px #47474722;
 }
 
 /* Projects */
@@ -357,13 +364,16 @@ html {
 .project-tile {
   display: flex;
   width: 100%;
-  height: 125px;
   align-items: center;
   padding: 24px 48px;
 
   margin-bottom: 12px;
 
   border: 1px solid #47474733;
+
+  h2 {
+    font-size: 24px;
+  }
 
   /* "to left" / "to right" - affects initial color */
   /* background: linear-gradient(to right, #5ac4f655 50%, #eb539f55 50%) right;
