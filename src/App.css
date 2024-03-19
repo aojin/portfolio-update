@@ -1,4 +1,5 @@
 header {
+  font-family: "Metropolis Medium";
   position: fixed;
   top: 0;
   width: 100%;
@@ -36,6 +37,7 @@ header {
     }
   }
   button {
+    font-family: "Metropolis Medium";
     display: flex;
     align-items: center;
     justify-content: space-between;
