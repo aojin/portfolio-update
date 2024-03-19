@@ -84,7 +84,12 @@ function App() {
                 <a href="#contact">Contact</a>
               </li>
               <li>
-                <a href={ResumePDF} download="Alex Jin 2024 Resume">
+                <a
+                  href={ResumePDF}
+                  download="Alex Jin 2024 Resume"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <button>
                     <img src={DownloadIcon} alt="download resume" />
                     <p style={{ color: "#474747" }}>Resume</p>

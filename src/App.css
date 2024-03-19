@@ -163,7 +163,7 @@ html {
 .facts {
   width: 100%;
   max-width: 600px;
-  min-width: 500px;
+  /* min-width: 500px; */
   margin-bottom: 60px;
   padding: 24px 0;
 
@@ -497,6 +497,29 @@ html {
   display: none;
 }
 
+.form-area {
+  background-color: #47474720;
+  padding: 60px;
+  margin-bottom: 60px;
+
+  h2 {
+    font-size: 48px;
+  }
+}
+
+/* FORM */
+
+.contact h2 {
+  margin-top: 24px;
+
+  margin-bottom: 80px;
+
+  span {
+    font-size: 48px;
+    margin-left: 18px;
+  }
+}
+
 /**
       * Basic CSS Media Query Template
       * ------------------------------------------
@@ -622,6 +645,11 @@ html {
   .project-tile-imgs {
     display: none;
   }
+  .form-area {
+    h2 {
+      font-size: 36px !important;
+    }
+  }
 }
 
 .project-tile-info-mobile-right-align {
@@ -630,23 +658,6 @@ html {
     height: 48px;
     border-radius: 50%;
   }
-}
-
-/* FORM */
-
-.contact h2 {
-  margin-bottom: 80px;
-
-  span {
-    font-size: 48px;
-    margin-left: 18px;
-  }
-}
-
-.form-area {
-  background-color: #47474720;
-  padding: 60px;
-  margin-bottom: 60px;
 }
 
 @media all and (min-width: 768px) and (max-width: 1001px) {
@@ -783,8 +794,7 @@ html {
   }
 
   .facts {
-    min-width: none;
-    .icon {
+    min-width: .icon {
       font-size: 24px;
       margin-right: 6px;
     }
