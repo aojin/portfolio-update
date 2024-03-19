@@ -56,7 +56,6 @@ function ParallaxScroll() {
 
   const translateDown = (hookedYPosition) => {
     const translatePercentage = hookedYPosition * 3000;
-    console.log({ translatePercentage });
     return {
       transform: `translateY(${translatePercentage}%)`,
     };

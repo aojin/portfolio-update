@@ -17,6 +17,7 @@ import "./App.css";
 
 import ParallaxScroll from "./components/ParallaxScroll";
 import ProjectList from "./components/ProjectList";
+import ContactForm from "./components/ContactForm";
 
 const projects = [
   {
@@ -228,102 +229,7 @@ function App() {
         <section id="contact" className="contact">
           <div id="contact" className="scroll-anchor"></div>
           <h2>Contact</h2>
-          <div>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam,
-            soluta? Non minus eligendi ab, deserunt illum aliquam quidem
-            officiis commodi mollitia dignissimos ad qui rerum natus, vero nihil
-            in eum.
-          </div>
-          <div>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam,
-            soluta? Non minus eligendi ab, deserunt illum aliquam quidem
-            officiis commodi mollitia dignissimos ad qui rerum natus, vero nihil
-            in eum.
-          </div>
-          <div>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam,
-            soluta? Non minus eligendi ab, deserunt illum aliquam quidem
-            officiis commodi mollitia dignissimos ad qui rerum natus, vero nihil
-            in eum.
-          </div>
-          <div>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam,
-            soluta? Non minus eligendi ab, deserunt illum aliquam quidem
-            officiis commodi mollitia dignissimos ad qui rerum natus, vero nihil
-            in eum.
-          </div>
-          <div>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam,
-            soluta? Non minus eligendi ab, deserunt illum aliquam quidem
-            officiis commodi mollitia dignissimos ad qui rerum natus, vero nihil
-            in eum.
-          </div>
-          <div>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam,
-            soluta? Non minus eligendi ab, deserunt illum aliquam quidem
-            officiis commodi mollitia dignissimos ad qui rerum natus, vero nihil
-            in eum.
-          </div>
-          <div>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam,
-            soluta? Non minus eligendi ab, deserunt illum aliquam quidem
-            officiis commodi mollitia dignissimos ad qui rerum natus, vero nihil
-            in eum.
-          </div>
-          <div>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam,
-            soluta? Non minus eligendi ab, deserunt illum aliquam quidem
-            officiis commodi mollitia dignissimos ad qui rerum natus, vero nihil
-            in eum.
-          </div>
-          <div>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam,
-            soluta? Non minus eligendi ab, deserunt illum aliquam quidem
-            officiis commodi mollitia dignissimos ad qui rerum natus, vero nihil
-            in eum.
-          </div>
-          <div>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam,
-            soluta? Non minus eligendi ab, deserunt illum aliquam quidem
-            officiis commodi mollitia dignissimos ad qui rerum natus, vero nihil
-            in eum.
-          </div>
-          <div>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam,
-            soluta? Non minus eligendi ab, deserunt illum aliquam quidem
-            officiis commodi mollitia dignissimos ad qui rerum natus, vero nihil
-            in eum.
-          </div>
-          <div>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam,
-            soluta? Non minus eligendi ab, deserunt illum aliquam quidem
-            officiis commodi mollitia dignissimos ad qui rerum natus, vero nihil
-            in eum.
-          </div>
-          <div>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam,
-            soluta? Non minus eligendi ab, deserunt illum aliquam quidem
-            officiis commodi mollitia dignissimos ad qui rerum natus, vero nihil
-            in eum.
-          </div>
-          <div>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam,
-            soluta? Non minus eligendi ab, deserunt illum aliquam quidem
-            officiis commodi mollitia dignissimos ad qui rerum natus, vero nihil
-            in eum.
-          </div>
-          <div>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam,
-            soluta? Non minus eligendi ab, deserunt illum aliquam quidem
-            officiis commodi mollitia dignissimos ad qui rerum natus, vero nihil
-            in eum.
-          </div>
-          <div>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam,
-            soluta? Non minus eligendi ab, deserunt illum aliquam quidem
-            officiis commodi mollitia dignissimos ad qui rerum natus, vero nihil
-            in eum.
-          </div>
+          <ContactForm />
         </section>
         <div className="scroll-background">
           <ParallaxScroll />
