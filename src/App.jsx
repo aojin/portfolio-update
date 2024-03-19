@@ -9,129 +9,307 @@ import InstagramLogo from "./assets/instagram.png";
 import "./App.css";
 
 import ParallaxScroll from "./components/ParallaxScroll";
+import ProjectList from "./components/ProjectList";
+
+const projects = [
+  {
+    name: "American Truck Business Services",
+    url: "https://www.atbs.com/",
+    technologies: ["ionic", "rails", "sass"],
+  },
+  {
+    name: "Millennium Trust Company",
+    url: "https://inspirafinancial.com/",
+    technologies: ["react", "mulesoft", "rails", "sass"],
+  },
+  {
+    name: "Natera",
+    url: "https://www.natera.com",
+    technologies: ["react", "salesforce", "sass"],
+  },
+  {
+    name: "Firm Value",
+    url: "https://www.crunchbase.com/organization/firm-value",
+    technologies: ["react", "rails", "sass"],
+  },
+  {
+    name: "Framelines",
+    technologies: ["rails", "tailwind"],
+  },
+  {
+    name: "Visit Boulder",
+    technologies: ["react", "typescript", "sass"],
+  },
+  {
+    name: "Blue Goat Mountaineering",
+    technologies: ["react", "typescript", "tailwind"],
+  },
+  {
+    name: "Designable Web",
+    technologies: ["next", "node", "graphql", "tailwind"],
+  },
+];
 
 function App() {
   return (
-    <main className="layout-grid">
-      <header>
-        <nav>
-          <ul>
-            <li>
-              <a href="#about">About</a>
-            </li>
-            <li>
-              <a href="#projects">Projects</a>
-            </li>
-            <li>
-              <a href="#contact">Contact</a>
-            </li>
-            <li>
-              <button>
-                <img src={DownloadIcon} alt="download resume" />
-                Resume
-              </button>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <section className="hero">
-        <section className="hero-text">
-          <section className="hero-title">
-            <h1 id="title-alex">
-              I'm <span>Alex,</span>
-            </h1>
-            <h1 id="title-fullstack">
-              a <span>Full Stack</span>
-            </h1>
-            <h1 id="title-developer">
-              Web <span>Developer</span>
-              <div id="title-period"></div>
-            </h1>
-          </section>
-          <nav className="hero-links">
-            <a href="#">
-              <img src={GithubLogo} alt="" />
-            </a>
-            <a href="#">
-              <img src={LinkedInLogo} alt="" />
-            </a>
-            <a href="#">
-              <img src={GoodreadsLogo} alt="" />
-            </a>
-            <a href="#">
-              <img src={InstagramLogo} alt="" />
-            </a>
+    <div className="scroll-container">
+      <main className="layout-grid">
+        <header style={{ position: "sticky" }}>
+          <nav>
+            <ul>
+              <li>
+                <a href="#about">About</a>
+              </li>
+              <li>
+                <a href="#projects">Projects</a>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
+              <li>
+                <button>
+                  <img src={DownloadIcon} alt="download resume" />
+                  Resume
+                </button>
+              </li>
+            </ul>
           </nav>
-        </section>
-        <section className="hero-image">
-          <div className="profile-image-container">
-            <div className="profile-image-with-squares">
-              <img id="profile-image" src={ProfilePic} alt="" />
-              <div id="red-box"></div>
-              <div id="blue-box"></div>
+        </header>
+        <section className="hero">
+          <section className="hero-text">
+            <section className="hero-title">
+              <h1 id="title-alex">
+                I'm <span>Alex,</span>
+              </h1>
+              <h1 id="title-fullstack">
+                a <span>Full Stack</span>
+              </h1>
+              <h1 id="title-developer">
+                Web <span>Developer</span>
+                <div id="title-period"></div>
+              </h1>
+            </section>
+            <nav className="hero-links">
+              <a href="#">
+                <img src={GithubLogo} alt="" />
+              </a>
+              <a href="#">
+                <img src={LinkedInLogo} alt="" />
+              </a>
+              <a href="#">
+                <img src={GoodreadsLogo} alt="" />
+              </a>
+              <a href="#">
+                <img src={InstagramLogo} alt="" />
+              </a>
+            </nav>
+          </section>
+          <section className="hero-image">
+            <div className="profile-image-container">
+              <div className="profile-image-with-squares">
+                <img id="profile-image" src={ProfilePic} alt="" />
+                <div id="red-box"></div>
+                <div id="blue-box"></div>
+              </div>
             </div>
+          </section>
+        </section>
+
+        <section className="about">
+          <section className="facts">
+            <h3>
+              <img src={ChicagoFlagIcon} alt="chicago flag icon" />
+              <span className="label">Born: </span> <p>Chicago, IL</p>
+            </h3>
+            <h3>
+              <img src={COFlagIcon} alt="" />
+              <span className="label">Currently In: </span> <p>Boulder, CO</p>
+            </h3>
+            <h3>
+              <span className="icon">🎓</span>{" "}
+              <p>MsCS from DePaul University</p>
+            </h3>
+            <h3>
+              <span className="icon">🛠️</span>
+              <p>
+                <mark style={{ background: `#FFED02` }}>Five Years</mark>
+                of Experience Building For The Web
+              </p>
+            </h3>
+            <h3>
+              <span className="icon">❤️</span>
+              <p>Running, Skiing, Climbing, Sketch, Film Photography</p>
+            </h3>
+            <div className="skills">
+              <h3>
+                <span className="icon">💻</span>
+                <p>
+                  <span className="label">Frontend: </span> React, Typescript,
+                  Tailwind, HTML, SCSS, ++
+                </p>
+              </h3>
+              <h3>
+                <span className="icon">🗄️</span>
+                <p>
+                  <span className="label">Backend: </span> Rails, Node, GraphQL,
+                  SQL, NoSQL, ++
+                </p>
+              </h3>
+            </div>
+          </section>
+
+          <h2>About</h2>
+          <div id="about" className="scroll-anchor"></div>
+
+          <section className="about-blurb">
+            <p>
+              While living in Chicago in my early 20s, I felt creatively
+              bankrupt.
+            </p>
+            <p>
+              I was dissatisfied with a career placing banner ads and running
+              social analytics just to write the same PPT report, month after
+              month.
+            </p>
+            <p>
+              With some luck, I found my way to software development. It didn't
+              just to solve the day-to-day stresses of a dull job (DRY), it
+              empowered a curious and investigative mind that just wanted to
+              build useful things.
+            </p>
+            <p>
+              Every day I work to solve problems, design aesthetically pleasing
+              solutions, and create experiences that people actually care to
+              use.{" "}
+            </p>
+            <p>
+              As a seasoned software consultant and lead developer, I've helped
+              clients and teams architect for the long term, as well as execute
+              in crunch time.
+            </p>
+            <p>
+              While I have a background in all of the latest technologies, I
+              believe in using the right tools for the right job. The best web
+              experiences always begin with thoughtful design, solid performance
+              and a scalable foundation.
+            </p>
+            <p>
+              Now I live in the mountains, pursue my passions, and work with
+              incredible people around the world to bring ideas off the
+              blueprint and straight to users&apos; fingertips.
+            </p>
+          </section>
+        </section>
+        <section className="projects">
+          <h2>Projects</h2>
+          <div id="projects" className="scroll-anchor"></div>
+          <ProjectList projects={projects} />
+        </section>
+        <section id="contact" className="contact">
+          <div id="contact" className="scroll-anchor"></div>
+          contact
+          <div>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam,
+            soluta? Non minus eligendi ab, deserunt illum aliquam quidem
+            officiis commodi mollitia dignissimos ad qui rerum natus, vero nihil
+            in eum.
+          </div>
+          <div>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam,
+            soluta? Non minus eligendi ab, deserunt illum aliquam quidem
+            officiis commodi mollitia dignissimos ad qui rerum natus, vero nihil
+            in eum.
+          </div>
+          <div>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam,
+            soluta? Non minus eligendi ab, deserunt illum aliquam quidem
+            officiis commodi mollitia dignissimos ad qui rerum natus, vero nihil
+            in eum.
+          </div>
+          <div>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam,
+            soluta? Non minus eligendi ab, deserunt illum aliquam quidem
+            officiis commodi mollitia dignissimos ad qui rerum natus, vero nihil
+            in eum.
+          </div>
+          <div>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam,
+            soluta? Non minus eligendi ab, deserunt illum aliquam quidem
+            officiis commodi mollitia dignissimos ad qui rerum natus, vero nihil
+            in eum.
+          </div>
+          <div>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam,
+            soluta? Non minus eligendi ab, deserunt illum aliquam quidem
+            officiis commodi mollitia dignissimos ad qui rerum natus, vero nihil
+            in eum.
+          </div>
+          <div>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam,
+            soluta? Non minus eligendi ab, deserunt illum aliquam quidem
+            officiis commodi mollitia dignissimos ad qui rerum natus, vero nihil
+            in eum.
+          </div>
+          <div>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam,
+            soluta? Non minus eligendi ab, deserunt illum aliquam quidem
+            officiis commodi mollitia dignissimos ad qui rerum natus, vero nihil
+            in eum.
+          </div>
+          <div>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam,
+            soluta? Non minus eligendi ab, deserunt illum aliquam quidem
+            officiis commodi mollitia dignissimos ad qui rerum natus, vero nihil
+            in eum.
+          </div>
+          <div>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam,
+            soluta? Non minus eligendi ab, deserunt illum aliquam quidem
+            officiis commodi mollitia dignissimos ad qui rerum natus, vero nihil
+            in eum.
+          </div>
+          <div>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam,
+            soluta? Non minus eligendi ab, deserunt illum aliquam quidem
+            officiis commodi mollitia dignissimos ad qui rerum natus, vero nihil
+            in eum.
+          </div>
+          <div>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam,
+            soluta? Non minus eligendi ab, deserunt illum aliquam quidem
+            officiis commodi mollitia dignissimos ad qui rerum natus, vero nihil
+            in eum.
+          </div>
+          <div>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam,
+            soluta? Non minus eligendi ab, deserunt illum aliquam quidem
+            officiis commodi mollitia dignissimos ad qui rerum natus, vero nihil
+            in eum.
+          </div>
+          <div>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam,
+            soluta? Non minus eligendi ab, deserunt illum aliquam quidem
+            officiis commodi mollitia dignissimos ad qui rerum natus, vero nihil
+            in eum.
+          </div>
+          <div>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam,
+            soluta? Non minus eligendi ab, deserunt illum aliquam quidem
+            officiis commodi mollitia dignissimos ad qui rerum natus, vero nihil
+            in eum.
+          </div>
+          <div>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam,
+            soluta? Non minus eligendi ab, deserunt illum aliquam quidem
+            officiis commodi mollitia dignissimos ad qui rerum natus, vero nihil
+            in eum.
           </div>
         </section>
-      </section>
-      <section className="about">
-        <section className="facts">
-          <h3>
-            <img src={ChicagoFlagIcon} alt="chicago flag icon" />
-            <span className="label">Born: </span> <p>Chicago, IL</p>
-          </h3>
-          <br />
-          <br />
-          <h3>
-            <img src={COFlagIcon} alt="" />
-            <span className="label">Currently In: </span> <p>Boulder, CO</p>
-          </h3>
-          <br />
-          <br />
-          <h3>
-            <span className="icon">🎓</span> <p>MsCS from DePaul University</p>
-          </h3>
-          <br />
-          <br />
-          <h3>
-            <span className="icon">🛠️</span>
-            <p>
-              <mark style={{ background: `#FFED02` }}>Five Years</mark>
-              of Experience Building For The Web
-            </p>
-          </h3>
-          <br />
-          <br />
-          <h3>
-            <span className="icon">❤️</span>
-            <p>Running, Skiing, Climbing, Sketch, Film Photography</p>
-          </h3>
-          <br />
-          <br />
-          <br />
-          <br />
-          <h3>
-            <span className="icon">💻</span>
-            <p>
-              <span className="label">Frontend: </span> React, Typescript,
-              Tailwind, HTML, SCSS, ++
-            </p>
-          </h3>
-          <br />
-          <h3>
-            <span className="icon">💻</span>
-            <p>
-              <span className="label">Backend: </span> Rails, Node, GraphQL,
-              SQL, NoSQL, ++
-            </p>
-          </h3>
-        </section>
-      </section>
-      <section className="projects">Projects</section>
-      <section className="contact">Contact</section>
-      <div className="scroll-background">
-        <ParallaxScroll />
-      </div>
-    </main>
+        <div className="scroll-background">
+          <ParallaxScroll />
+        </div>
+      </main>
+    </div>
   );
 }
 
