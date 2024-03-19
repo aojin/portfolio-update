@@ -181,8 +181,8 @@ function App() {
                 </p>
               </h3>
             </div>
+            <div id="about" className="scroll-anchor"></div>
           </section>
-          <div id="about" className="scroll-anchor"></div>
 
           <h2>About</h2>
 
