@@ -783,6 +783,7 @@ html {
   }
 
   .facts {
+    min-width: none;
     .icon {
       font-size: 24px;
       margin-right: 6px;
@@ -816,7 +817,7 @@ html {
   }
 
   .project-tile {
-    height: 120px;
+    height: 150px;
   }
 
   .project-tile-info {
@@ -835,9 +836,6 @@ html {
         height: 48px;
         border-radius: 50%;
       }
-    }
-
-    h2 {
     }
 
     a:link,
