@@ -59,7 +59,7 @@ header {
 h1 {
   font-family: "Metropolis Medium", sans-serif;
   letter-spacing: 0rem;
-  font-size: 72px;
+  font-size: 84px;
   margin-bottom: 30px;
   font-weight: bold;
   white-space: nowrap;
@@ -96,19 +96,18 @@ html {
 }
 
 .layout-grid {
-  padding: 24px 24px;
+  padding: 24px 64px;
   margin: 0 auto;
 
   width: 100%;
   min-width: 375px;
-  max-width: 1024px;
+  max-width: 1280px;
 
   height: 100%;
   display: grid;
   grid-template-columns: 1fr 375px;
   grid-template-rows: 120px fit-content fit-content fit-content;
   row-gap: 60px;
-  column-gap: 60px;
 }
 
 .hero {
@@ -117,7 +116,6 @@ html {
   grid-column: 1 / -1;
 
   display: flex;
-  gap: 60px;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -252,7 +250,7 @@ html {
 
   overflow: hidden;
 
-  height: 105%;
+  height: 115%;
 
   img {
     width: 40px;
@@ -508,7 +506,7 @@ html {
       * --------------------------------------------
       */
 
-@media all and (min-width: 1001px) {
+@media all and (min-width: 1001px) and (max-width: 1200px) {
   h1 {
     font-size: 64px;
     margin-bottom: 24px;
