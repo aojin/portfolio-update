@@ -133,6 +133,7 @@ html {
 }
 
 .hero-links {
+  padding: 24px 0;
   background-color: #fcfafc99;
   display: flex;
   gap: 48px;
