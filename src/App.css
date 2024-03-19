@@ -210,6 +210,7 @@ html {
   flex-direction: column;
   gap: 18px;
   line-height: 1.4;
+  font-size: 18px;
 }
 
 .about {
@@ -716,7 +717,7 @@ html {
   }
 }
 
-@media all and (max-width: 480px) {
+@media all and (max-width: 560px) {
   nav {
     ul {
       li {

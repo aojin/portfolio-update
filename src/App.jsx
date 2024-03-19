@@ -109,16 +109,22 @@ function App() {
               </h1>
             </section>
             <nav className="hero-links">
-              <a href="#">
+              <a href="https://github.com/aojin" target="_blank">
                 <img src={GithubLogo} alt="" />
               </a>
-              <a href="#">
+              <a
+                href="https://www.linkedin.com/in/alex-jin-aa1b2744/"
+                target="_blank"
+              >
                 <img src={LinkedInLogo} alt="" />
               </a>
-              <a href="#">
+              <a
+                href="https://www.goodreads.com/user/show/67207099-alex-jin"
+                target="_blank"
+              >
                 <img src={GoodreadsLogo} alt="" />
               </a>
-              <a href="#">
+              <a href="https://www.instagram.com/aojin" target="_blank">
                 <img src={InstagramLogo} alt="" />
               </a>
             </nav>
