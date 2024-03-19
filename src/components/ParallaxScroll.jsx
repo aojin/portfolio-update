@@ -55,14 +55,14 @@ function ParallaxScroll() {
   // }, []);
 
   const translateDown = (hookedYPosition) => {
-    const translatePercentage = hookedYPosition * 2000;
+    const translatePercentage = hookedYPosition * 3000;
     console.log({ translatePercentage });
     return {
       transform: `translateY(${translatePercentage}%)`,
     };
   };
   const translateUp = (hookedYPosition) => {
-    const translatePercentage = hookedYPosition * 1500;
+    const translatePercentage = hookedYPosition * 2500;
     return {
       transform: `translateY(-${translatePercentage}%)`,
     };
@@ -135,12 +135,15 @@ function ParallaxScroll() {
       <div className="animation-column outer">
         {LeftColumn}
         {LeftColumn}
+        {LeftColumn}
       </div>
       <div className="animation-column inner">
         {MiddleColumn}
         {MiddleColumn}
+        {MiddleColumn}
       </div>
       <div className="animation-column outer">
+        {RightColumn}
         {RightColumn}
         {RightColumn}
       </div>
