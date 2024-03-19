@@ -540,6 +540,10 @@ html {
     margin-top: 60px;
   }
 
+  .about-blurb {
+    font-size: 18px;
+  }
+
   .facts {
     background-color: #fcfafc;
     grid-column: 1/-1;

@@ -182,7 +182,7 @@ function App() {
           <section className="about-blurb">
             <p>
               While living in Chicago in my early 20s, I felt creatively
-              bankrupt.
+              constrained.
             </p>
             <p>
               I was dissatisfied with a career placing banner ads and running
