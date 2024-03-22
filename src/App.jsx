@@ -145,6 +145,13 @@ function App() {
           </section>
         </section>
 
+        <section className="projects">
+          <div id="projects" className="scroll-anchor"></div>
+
+          <h2>Projects</h2>
+
+          <ProjectList projects={projects} />
+        </section>
         <section className="about">
           <section className="facts">
             <h3>
@@ -229,13 +236,6 @@ function App() {
               blueprint and straight to users&apos; fingertips.
             </p>
           </section>
-        </section>
-        <section className="projects">
-          <div id="projects" className="scroll-anchor"></div>
-
-          <h2>Projects</h2>
-
-          <ProjectList projects={projects} />
         </section>
         <section id="contact" className="contact">
           <div id="contact" className="scroll-anchor"></div>

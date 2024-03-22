@@ -1,3 +1,37 @@
+/* TOP LEVEL COMPONENTS */
+
+h1 {
+  font-family: "Metropolis Medium", sans-serif;
+  letter-spacing: 0rem;
+  font-size: 72px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  white-space: nowrap;
+  text-shadow: 1px 1px 3px #47474722;
+}
+
+h2 {
+  font-family: "Metropolis Medium", sans-serif;
+  font-size: 36px;
+  letter-spacing: 0rem;
+  margin: 24px 0;
+  margin-top: 120px;
+}
+
+h3 {
+  /* white-space: nowrap; */
+  line-height: 1.4;
+  /* overflow: hidden; */
+  display: flex;
+  align-items: center;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* GENERAL LAYOUT & GRID */
+
 header {
   font-family: "Metropolis Medium";
   position: fixed;
@@ -56,45 +90,6 @@ header {
   }
 }
 
-h1 {
-  font-family: "Metropolis Medium", sans-serif;
-  letter-spacing: 0rem;
-  font-size: 72px;
-  margin-bottom: 30px;
-  font-weight: bold;
-  white-space: nowrap;
-  text-shadow: 1px 1px 3px #47474722;
-}
-
-h2 {
-  font-family: "Metropolis Medium", sans-serif;
-  font-size: 36px;
-  letter-spacing: 0rem;
-  margin: 24px 0;
-  margin-top: 120px;
-}
-
-h3 {
-  /* white-space: nowrap; */
-  line-height: 1.4;
-  /* overflow: hidden; */
-  display: flex;
-  align-items: center;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-.scroll-anchor {
-  position: absolute;
-  z-index: -1;
-  width: 10px;
-  height: 10px;
-  transform: translateY(-40%);
-  padding-bottom: 50px;
-}
-
 .layout-grid {
   padding: 24px 64px;
   margin: 0 auto;
@@ -111,6 +106,24 @@ html {
   column-gap: 60px;
 }
 
+.about,
+.projects,
+.contact {
+  margin-top: 80px;
+  z-index: 1;
+  height: max-content;
+  background-color: #fcfafc99;
+}
+
+.scroll-anchor {
+  position: absolute;
+  z-index: -1;
+  width: 10px;
+  height: 10px;
+  transform: translateY(-40%);
+  padding-bottom: 50px;
+}
+
 .hero {
   z-index: 1;
   grid-row: 2 / 3;
@@ -123,6 +136,27 @@ html {
   height: 100%;
   max-height: 600px;
 }
+
+.about {
+  grid-row: 3/4;
+  grid-column: 1/2;
+}
+
+.projects {
+  grid-row: 4/5;
+  grid-column: 1/-1;
+
+  h2 {
+    margin-bottom: 72px;
+  }
+}
+
+.contact {
+  grid-row: 5/6;
+  grid-column: 1/-1;
+}
+
+/* HERO Section */
 
 .hero-text {
   margin-right: auto;
@@ -149,90 +183,6 @@ html {
     border-radius: 50%;
     box-shadow: 2px 2px 2px #47474722;
   }
-}
-
-.about,
-.projects,
-.contact {
-  margin-top: 80px;
-  z-index: 1;
-  height: max-content;
-  background-color: #fcfafc99;
-}
-
-.facts {
-  width: 100%;
-  max-width: 600px;
-  /* min-width: 500px; */
-  margin-bottom: 60px;
-  padding: 24px 0;
-
-  img {
-    height: 32px;
-    /* border-radius: 6px; */
-
-    margin-right: 16px;
-  }
-
-  .icon {
-    font-size: 32px;
-    height: 32px;
-    width: 32px;
-    margin-right: 12px;
-  }
-
-  .label {
-    font-family: "Metropolis Semi-Bold";
-    margin-right: 6px;
-  }
-
-  mark {
-    display: inline;
-    white-space: nowrap;
-    margin-right: 6px;
-  }
-
-  h3 {
-    margin-bottom: 32px;
-  }
-
-  .skills {
-    margin-top: 64px;
-    h3 {
-      margin-bottom: 24px;
-    }
-  }
-}
-
-.about-blurb {
-  background-color: #fcfafc;
-  margin-top: 64px;
-  padding: 36px 0;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-  line-height: 1.4;
-  font-size: 18px;
-}
-
-.about {
-  grid-row: 3/4;
-  grid-column: 1/2;
-}
-
-.projects {
-  grid-row: 4/5;
-  grid-column: 1/-1;
-
-  h2 {
-    margin-bottom: 72px;
-  }
-}
-
-.contact {
-  grid-row: 5/6;
-  grid-column: 1/-1;
 }
 
 .scroll-background {
@@ -495,16 +445,69 @@ html {
 
 .project-tile-info-mobile-right-align {
   display: none;
+  img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+  }
 }
 
-.form-area {
-  background-color: #47474720;
-  padding: 60px;
-  margin-bottom: 60px;
+/* ABOUT */
 
-  h2 {
-    font-size: 48px;
+.facts {
+  width: 100%;
+  max-width: 600px;
+  /* min-width: 500px; */
+  margin-bottom: 60px;
+  padding: 24px 0;
+
+  img {
+    height: 32px;
+    /* border-radius: 6px; */
+
+    margin-right: 16px;
   }
+
+  .icon {
+    font-size: 32px;
+    height: 32px;
+    width: 32px;
+    margin-right: 12px;
+  }
+
+  .label {
+    font-family: "Metropolis Semi-Bold";
+    margin-right: 6px;
+  }
+
+  mark {
+    display: inline;
+    white-space: nowrap;
+    margin-right: 6px;
+  }
+
+  h3 {
+    margin-bottom: 32px;
+  }
+
+  .skills {
+    margin-top: 64px;
+    h3 {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.about-blurb {
+  background-color: #fcfafc;
+  margin-top: 64px;
+  padding: 36px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  line-height: 1.4;
+  font-size: 18px;
 }
 
 /* FORM */
@@ -515,11 +518,113 @@ html {
   margin-bottom: 80px;
 
   span {
-    font-size: 48px;
+    font-size: 36px;
     margin-left: 18px;
   }
 }
 
+.form-area {
+  background-color: #47474720;
+  padding: 60px;
+  margin-bottom: 60px;
+
+  h2 {
+    font-size: 36px;
+    margin-bottom: 0;
+  }
+
+  button {
+    border: none;
+    padding: 12px 24px;
+    border-radius: 32px;
+    margin-top: 24px;
+    background-color: #ffed02;
+    text-transform: uppercase;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      margin-right: 12px;
+    }
+  }
+}
+
+#from_name {
+  display: inline-block;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: #eb539f;
+
+  border: none;
+  background: #47474722;
+  font-size: 36px;
+  margin-left: 12px;
+  color: #eb539f;
+}
+
+#client_type {
+  display: inline-block;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: #6ce4cf;
+
+  border: none;
+  background: transparent;
+  font-size: 36px;
+  margin-left: 12px;
+  color: #6ce4cf;
+}
+
+#work_type {
+  display: inline-block;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: #5ac4f6;
+
+  border: none;
+  background: transparent;
+  font-size: 36px;
+  margin-left: 12px;
+  color: #5ac4f6;
+}
+
+#company_name {
+  display: inline-block;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: #ffed02;
+  background-color: #474747;
+  border: none;
+  background: #47474722;
+  font-size: 36px;
+  margin-left: 12px;
+  color: #ffed02;
+  max-width: 300px;
+}
+
+#client_email {
+  display: inline-block;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: #eb539f;
+
+  border: none;
+  background: #47474722;
+  font-size: 36px;
+  margin-left: 12px;
+  color: #eb539f;
+}
+
+.error-message {
+  color: red;
+  background-color: transparent;
+}
+
+.form-field {
+  margin-bottom: 64px;
+}
 /**
       * Basic CSS Media Query Template
       * ------------------------------------------
@@ -652,14 +757,6 @@ html {
   }
 }
 
-.project-tile-info-mobile-right-align {
-  img {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-  }
-}
-
 @media all and (min-width: 768px) and (max-width: 1001px) {
   .about,
   .projects,
@@ -757,6 +854,34 @@ html {
   }
 }
 
+.form-area {
+  h2 {
+    font-size: 24px !important;
+  }
+  .error-message {
+    font-size: 12px;
+  }
+}
+
+.form-field {
+  margin-bottom: 36px;
+  h2 {
+    font-size: 24px !important;
+  }
+  input {
+    font-size: 24px !important;
+    margin-left: 0px !important;
+    max-width: 250px;
+  }
+  select {
+    font-size: 24px !important;
+    margin-left: 0px !important;
+  }
+  span {
+    font-size: 24px !important;
+  }
+}
+
 @media all and (max-width: 560px) {
   nav {
     ul {
@@ -794,7 +919,7 @@ html {
   }
 
   .facts {
-    min-width: .icon {
+    .icon {
       font-size: 24px;
       margin-right: 6px;
     }
@@ -862,13 +987,4 @@ html {
       width: fit-content;
     }
   }
-}
-
-/* Portrait */
-@media screen and (orientation: portrait) {
-  /* Portrait styles here */
-}
-/* Landscape */
-@media screen and (orientation: landscape) {
-  /* Landscape styles here */
 }

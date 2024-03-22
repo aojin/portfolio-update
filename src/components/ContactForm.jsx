@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { Formik, Field, Form } from "formik";
 import * as Yup from "yup";
+import SendIcon from "../assets/utility-icons/send.png";
 
 const propTypes = {};
 
@@ -80,64 +81,81 @@ const ContactForm = () => {
       >
         {({ errors, touched }) => (
           <Form>
-            <h2>
-              Hi my name is
-              <Field id="from_name" name="from_name" placeholder="John Smith" />
-            </h2>
-            {errors.from_name && touched.from_name ? (
-              <div>{errors.from_name}</div>
-            ) : null}
-            <h2>
-              and I&apos;m a
-              <Field name="client_type" id="client_type" as="select">
-                <option value="new client">new client</option>
-                <option value="recruiter">recruiter</option>
-                <option value="startup founder">startup founder</option>
-              </Field>
-              hiring
-            </h2>
-            {errors.client_type && touched.client_type ? (
-              <div>{errors.client_type}</div>
-            ) : null}
-            <h2>
-              for a{" "}
-              <Field name="work_type" id="work_type" as="select">
-                <option value="project">project</option>
-                <option value="full-time position">full-time position</option>
-                <option value="contract role">contract role</option>
-              </Field>
-              .
-            </h2>
-            {errors.work_type && touched.work_type ? (
-              <div>{errors.work_type}</div>
-            ) : null}
-            <h2>
-              Our company is called
-              <Field
-                id="company_name"
-                name="company_name"
-                placeholder="MicroAppleBook"
-              />
-              .
-            </h2>
-            {errors.company_name && touched.company_name ? (
-              <div>{errors.company_name}</div>
-            ) : null}
-            <h2>
-              You can email me back at
-              <Field
-                type="email"
-                name="client_email"
-                placeholder="myemail@acme.com"
-              />
-              .
-            </h2>
-            {errors.client_email && touched.client_email ? (
-              <div>{errors.client_email}</div>
-            ) : null}
+            <div className="form-field">
+              <h2>
+                Hi my name is
+                <Field
+                  id="from_name"
+                  name="from_name"
+                  placeholder="John Smith"
+                  contenteditable="true"
+                />
+              </h2>
+              {errors.from_name && touched.from_name ? (
+                <div className="error-message">{errors.from_name}</div>
+              ) : null}
+            </div>
+
+            <div className="form-field">
+              <h2>
+                and I&apos;m a
+                <Field name="client_type" id="client_type" as="select">
+                  <option value="new client">new client</option>
+                  <option value="recruiter">recruiter</option>
+                  <option value="startup founder">startup founder</option>
+                </Field>
+              </h2>
+              {errors.client_type && touched.client_type ? (
+                <div className="error-message">{errors.client_type}</div>
+              ) : null}
+            </div>
+            <div className="form-field">
+              <h2>
+                hiring for a{" "}
+                <Field name="work_type" id="work_type" as="select">
+                  <option value="project">project</option>
+                  <option value="full-time position">full-time position</option>
+                  <option value="contract role">contract role</option>
+                </Field>
+                <span style={{ color: "#5ac4f6" }}>.</span>
+              </h2>
+              {errors.work_type && touched.work_type ? (
+                <div className="error-message">{errors.work_type}</div>
+              ) : null}
+            </div>
+            <div className="form-field">
+              <h2>
+                Our company is called
+                <Field
+                  id="company_name"
+                  name="company_name"
+                  placeholder="MicroAppleBook"
+                />
+                <span style={{ color: "#ffed02" }}>.</span>
+              </h2>
+              {errors.company_name && touched.company_name ? (
+                <div className="error-message">{errors.company_name}</div>
+              ) : null}
+            </div>
+            <div className="form-field">
+              <h2>
+                You can email me back at
+                <Field
+                  id="client_email"
+                  type="email"
+                  name="client_email"
+                  placeholder="myemail@acme.com"
+                />
+                .
+              </h2>
+              {errors.client_email && touched.client_email ? (
+                <div className="error-message">{errors.client_email}</div>
+              ) : null}
+            </div>
             <h2>Looking forward to working with you!</h2>
             <button type="submit" disabled={isSubmitting}>
-              Submit
+              <img src={SendIcon} alt="" />
+              Send
             </button>
             {stateMessage && <p>{stateMessage}</p>}
           </Form>
