@@ -4,15 +4,9 @@ import { Formik, Field, Form } from "formik";
 import * as Yup from "yup";
 import SendIcon from "../assets/utility-icons/send.png";
 
-const propTypes = {};
-
-const defaultProps = {};
-
 const ContactForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [stateMessage, setStateMessage] = useState(null);
-
-  //emqDNsIbEzmkJALw8
 
   useEffect(() => emailjs.init(import.meta.env.VITE_EMAIL_JS_PUBLIC_KEY), []);
 
@@ -27,7 +21,7 @@ const ContactForm = () => {
         import.meta.env.VITE_EMAIL_JS_PUBLIC_KEY
       )
       .then(
-        (result) => {
+        () => {
           setStateMessage("Message sent!");
           setIsSubmitting(false);
           setTimeout(() => {
@@ -82,13 +76,15 @@ const ContactForm = () => {
         {({ errors, touched }) => (
           <Form>
             <div className="form-field">
-              <h2>
-                Hi my name is
+              <h2 className="form-line">
+                <span className="nowrap-text">Hi my name is</span>
                 <Field
                   id="from_name"
                   name="from_name"
                   placeholder="John Smith"
-                  contenteditable="true"
+                  className="input-spacing"
+                  as="input"
+                  contentEditable="true"
                 />
               </h2>
               {errors.from_name && touched.from_name ? (
@@ -97,9 +93,14 @@ const ContactForm = () => {
             </div>
 
             <div className="form-field">
-              <h2>
-                and I&apos;m a
-                <Field name="client_type" id="client_type" as="select">
+              <h2 className="form-line">
+                <span className="nowrap-text">and I&apos;m a</span>
+                <Field
+                  name="client_type"
+                  id="client_type"
+                  as="select"
+                  className="input-spacing"
+                >
                   <option value="new client">new client</option>
                   <option value="recruiter">recruiter</option>
                   <option value="startup founder">startup founder</option>
@@ -110,9 +111,14 @@ const ContactForm = () => {
               ) : null}
             </div>
             <div className="form-field">
-              <h2>
-                hiring for a{" "}
-                <Field name="work_type" id="work_type" as="select">
+              <h2 className="form-line">
+                <span className="nowrap-text">hiring for a</span>
+                <Field
+                  name="work_type"
+                  id="work_type"
+                  as="select"
+                  className="input-spacing"
+                >
                   <option value="project">project</option>
                   <option value="full-time position">full-time position</option>
                   <option value="contract role">contract role</option>
@@ -124,12 +130,14 @@ const ContactForm = () => {
               ) : null}
             </div>
             <div className="form-field">
-              <h2>
-                Our company is called
+              <h2 className="form-line">
+                <span className="nowrap-text">Our company is called</span>
                 <Field
                   id="company_name"
                   name="company_name"
                   placeholder="MicroAppleBook"
+                  className="input-spacing"
+                  as="input"
                 />
                 <span style={{ color: "#ffed02" }}>.</span>
               </h2>
@@ -138,15 +146,17 @@ const ContactForm = () => {
               ) : null}
             </div>
             <div className="form-field">
-              <h2>
-                You can email me back at
+              <h2 className="form-line">
+                <span className="nowrap-text">You can email me back at</span>
                 <Field
                   id="client_email"
                   type="email"
                   name="client_email"
                   placeholder="myemail@acme.com"
+                  className="input-spacing"
+                  as="input"
                 />
-                .
+                <span>.</span>
               </h2>
               {errors.client_email && touched.client_email ? (
                 <div className="error-message">{errors.client_email}</div>
@@ -164,8 +174,5 @@ const ContactForm = () => {
     </div>
   );
 };
-
-ContactForm.propTypes = propTypes;
-ContactForm.defaultProps = defaultProps;
 
 export default ContactForm;

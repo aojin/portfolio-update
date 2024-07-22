@@ -519,7 +519,7 @@ header {
 
   span {
     font-size: 36px;
-    margin-left: 18px;
+    /* margin-left: 18px; */
   }
 }
 
@@ -551,6 +551,11 @@ header {
   }
 }
 
+input,
+select {
+  margin-left: 12px;
+}
+
 #from_name {
   display: inline-block;
   text-decoration: underline;
@@ -560,7 +565,6 @@ header {
   border: none;
   background: #47474722;
   font-size: 36px;
-  margin-left: 12px;
   color: #eb539f;
 }
 
@@ -573,7 +577,6 @@ header {
   border: none;
   background: transparent;
   font-size: 36px;
-  margin-left: 12px;
   color: #6ce4cf;
 }
 
@@ -586,7 +589,6 @@ header {
   border: none;
   background: transparent;
   font-size: 36px;
-  margin-left: 12px;
   color: #5ac4f6;
 }
 
@@ -599,7 +601,6 @@ header {
   border: none;
   background: #47474722;
   font-size: 36px;
-  margin-left: 12px;
   color: #ffed02;
   max-width: 300px;
 }
@@ -613,7 +614,6 @@ header {
   border: none;
   background: #47474722;
   font-size: 36px;
-  margin-left: 12px;
   color: #eb539f;
 }
 
@@ -644,6 +644,10 @@ header {
   }
   .hero-text {
     background: none;
+  }
+  input,
+  select {
+    margin-left: 12px;
   }
 }
 
@@ -755,6 +759,10 @@ header {
       font-size: 36px !important;
     }
   }
+  input,
+  select {
+    margin-left: 12px;
+  }
 }
 
 @media all and (min-width: 768px) and (max-width: 1001px) {
@@ -777,6 +785,10 @@ header {
 
   .project-tile-info-mobile-right-align {
     display: block;
+  }
+  input,
+  select {
+    margin-left: 12px;
   }
 }
 
@@ -870,12 +882,12 @@ header {
   }
   input {
     font-size: 24px !important;
-    margin-left: 0px !important;
+    margin: 0px;
     max-width: 250px;
   }
   select {
     font-size: 24px !important;
-    margin-left: 0px !important;
+    margin-left: 0px;
   }
   span {
     font-size: 24px !important;
@@ -987,4 +999,28 @@ header {
       width: fit-content;
     }
   }
+}
+
+.form-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.input-spacing {
+  margin-left: 12px; /* Adjust the value as needed */
+  flex-grow: 1;
+}
+
+.nowrap-text {
+  white-space: nowrap;
+  margin-right: 12px;
+}
+
+.form-field {
+  width: 100%;
+}
+
+.form-line {
 }
